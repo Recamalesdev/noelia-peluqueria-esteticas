@@ -1,0 +1,295 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fefefe;
+  color: #333;
+}
+
+nav {
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #c47b7b;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #a94f4f;
+}
+
+nav ul li a.activo {
+  color: #a94f4f;
+  border-bottom: 2px  solid #a94f4f;
+}
+.imagen-cabecera {
+  background-color: #f8f1f1;
+  padding: 60px 20px;
+  text-align: center;
+  font-size: 2em;
+  color: #c47b7b;
+}
+
+.sobre-mi {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.texto-sobre-mi {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #444;
+}
+
+.banner-principal {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.galeria-trabajos {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.grid-trabajos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.grid-trabajos img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.grid-trabajos img:hover {
+  transform: scale(1.05);
+}
+
+/* Para móviles: dos columnas */
+@media (max-width: 768px) {
+  .grid-trabajos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Para dispositivos muy pequeños: una columna */
+@media (max-width: 480px) {
+  .grid-trabajos {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.cuidado-casa {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  line-height: 1.7;
+}
+
+.cuidado-casa ul {
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.cuidado-casa h3 {
+  color: #c47b7b;
+  margin-top: 30px;
+}
+
+.depilacion-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+
+.depilacion-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.depilacion-gallery img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.depilacion-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.servicio-media {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+section[id^="estetica"], 
+section[id="depilacion"], 
+section[id^="pestanas"], 
+section[id="peluqueria"] {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+section[id^="estetica"] h2,
+section[id^="pestanas"] h2,
+section[id="peluqueria"] h2 {
+  color: #c47b7b;
+  margin-bottom: 20px;
+}
+
+section p {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  line-height: 1.6;
+  color: #444;
+}
+
+
+.whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #25D366;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 15px;
+}
+
+.whatsapp-link img {
+  vertical-align: middle;
+}
+
+.whatsapp-link:hover {
+  color: #00ff5e;
+}
+
+.whatsapp-link:hover img{
+  transform: scale3d(1.2, 1.2, 1);
+}
+
+.contacto-profesional {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+button {
+  background-color: #c47b7b;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #a94f4f;
+}
+
+.contacto-directo {
+  margin-top: 40px;
+}
+
+.ubicacion {
+  margin-top: 30px;
+  color: #555;
+}
+
+.redes-sociales {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.redes-sociales img {
+  transform: transform 0.3s;
+}
+
+.redes-sociales img:hover {
+  transform: scale(1.2);
+}
+
+
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+main h2 {
+  color: #c47b7b;
+  margin-top: 40px;
+}
+
+main ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
