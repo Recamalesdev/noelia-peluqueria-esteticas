@@ -7,58 +7,60 @@
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="trabajos.html">Trabajos</a></li>
-        <li><a href="productos.html">Cuidado en casa</a></li>
-        <li><a href="contacto.html" class="activo">Contacto</a></li>
-      </ul>
-    </nav>
-  
-    <header class="imagen-cabecera">
-      <img src="img/contacto-cabecera.png" alt="Contáctanos" class="banner-principal">
-      <h1>Contacto</h1>
-      <p>Agenda tu cita o consúltanos directamente</p>
-    </header>
-  
-    <main>
-      <section class="contacto-profesional">
-        <h2>Formulario de contacto</h2>
-        <form>
-          <input type="text" placeholder="Tu nombre" required>
-          <input type="email" placeholder="Correo electrónico" required>
-          <input type="tel" placeholder="Teléfono" required>
-          <textarea placeholder="Escribe tu mensaje..." rows="5" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-  
-        <div class="contacto-directo">
-          <h3>También puedes escribirnos directamente:</h3>
-          <a href="https://wa.me/34600312518" target="_blank" class="whatsapp-link">
-            <img src="img/icon-whatsapp.png" alt="WhatsApp" width="28"> WhatsApp directo
+  <nav>
+    <ul id="nav-menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="trabajos.html">Trabajos</a></li>
+      <li><a href="productos.html">Cuidado en casa</a></li>
+      <li><a href="contacto.html" class="activo">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header class="imagen-cabecera">
+    <img src="img/contacto-cabecera.png" alt="Contáctanos" class="banner-principal">
+    <h1>Contacto</h1>
+    <p>Agenda tu cita o consúltanos directamente</p>
+  </header>
+
+  <main>
+    <section class="contacto-profesional">
+      <h2>Formulario de contacto</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <input type="tel" placeholder="Teléfono" required>
+        <textarea placeholder="Escribe tu mensaje..." rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="contacto-directo">
+        <h3>También puedes escribirnos directamente:</h3>
+        <a href="https://wa.me/34600312518" target="_blank" class="whatsapp-link">
+          <img src="img/icon-whatsapp.png" alt="WhatsApp" width="28"> WhatsApp directo
+        </a>
+
+        <div class="redes-sociales">
+          <a href="https://instagram.com/usuario" target="_blank" aria-label="Instagram">
+            <img src="img/icon-instagram.png" alt="Instagram" width="28">
           </a>
-  
-          <div class="redes-sociales">
-            <a href="https://instagram.com/usuario" target="_blank" aria-label="Instagram">
-              <img src="img/icon-instagram.png" alt="Instagram" width="28">
-            </a>
-            <a href="https://facebook.com/usuario" target="_blank" aria-label="Facebook">
-              <img src="img/icon-facebook.png" alt="Facebook" width="28">
-            </a>
-          </div>
+          <a href="https://facebook.com/usuario" target="_blank" aria-label="Facebook">
+            <img src="img/icon-facebook.png" alt="Facebook" width="28">
+          </a>
         </div>
+      </div>
+
+      <p class="ubicacion">Ubicación: Bornos, Cádiz</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Noelia Garrido Peluquería y Estética. Todos los derechos reservados.</p>
+  </footer>
   
-        <p class="ubicacion">Ubicación: Bornos, Cádiz</p>
-      </section>
-    </main>
-  
-    <footer>
-      <p>© 2025 Noelia Garrido Peluquería y Estética. Todos los derechos reservados.</p>
-    </footer>
-  </body>
-  
+  <!-- Opcional: Botón "Back to Top" -->
+  <button id="back-to-top" title="Volver arriba" style="display: none;">↑</button>
+
+  <script src="js/main.js" defer></script>
 </body>
 </html>

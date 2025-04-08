@@ -35,8 +35,9 @@ nav ul li a:hover {
 
 nav ul li a.activo {
   color: #a94f4f;
-  border-bottom: 2px  solid #a94f4f;
+  border-bottom: 2px solid #a94f4f;
 }
+
 .imagen-cabecera {
   background-color: #f8f1f1;
   padding: 60px 20px;
@@ -261,7 +262,7 @@ button:hover {
 }
 
 .redes-sociales img {
-  transform: transform 0.3s;
+  transition: transform 0.3s;
 }
 
 .redes-sociales img:hover {
@@ -292,4 +293,23 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  background-color: #c47b7b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;  /* Se oculta al inicio */
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+}
+
+#back-to-top:hover {
+  background-color: #a94f4f;
 }
